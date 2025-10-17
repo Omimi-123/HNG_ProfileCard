@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Wizards | Profile Card</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <!--The Profile Card -->
+      <article data-testid="test-profile-card" class="profile-card">
+        <div class="user-info">
+          <figure class="avatar">
+            <img
+              src="https://res.cloudinary.com/dxnlpcxsd/image/upload/v1760723388/stephen_wtdfw4.jpg"
+              alt="Profile picture of Oretan Stephen"
+              data-testid="test-user-avatar"
+            />
+          </figure>
+
+          <header>
+            <h2 data-testid="test-user-name">Oretan Stephen O</h2>
+          </header>
+
+          <p data-testid="test-user-bio">
+            A very passionate and creative frontend developer who loves crafting
+            smooth user experiences and pixel-perfect designs.
+          </p>
+
+          <p class="time">
+            Current Time (ms):
+            <span data-testid="test-user-time" id="time"></span>
+          </p>
+        </div>
+        <div class="additional-info">
+          <nav aria-label="Social media links">
+            <ul data-testid="test-user-social-links" class="social-links">
+              <li>
+                <a
+                  data-testid="test-user-social-instagram"
+                  href="https://www.instagram.com/stephenoretan?igsh=MWhhejYxbnFwMHBsYw=="
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Instagram</a
+                >
+              </li>
+              <li>
+                <a
+                  data-testid="test-user-social-github"
+                  href="https://github.com/Omimi-123"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub</a
+                >
+              </li>
+              <li>
+                <a
+                  data-testid="test-user-social-linkedin"
+                  href="https://linkedin.com/in/stephen-oretan"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <section>
+            <h3>Hobbies</h3>
+            <ul data-testid="test-user-hobbies">
+              <li>Coding</li>
+              <li>Reading</li>
+              <li>Playing Games</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Dislikes</h3>
+            <ul data-testid="test-user-dislikes">
+              <li>Procrastination</li>
+              <li>Slow internet</li>
+              <li>Untidy workspace</li>
+            </ul>
+          </section>
+        </div>
+      </article>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

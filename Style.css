@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #6495ed;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.profile-card {
+  background: #000080;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  width: 100%;
+  overflow: hidden;
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 2rem;
+}
+.user-info {
+  width: 100%;
+}
+.additional-info {
+  width: 70%;
+}
+.avatar {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.avatar img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  /* padding-bottom: 1rem; */
+  object-fit: cover;
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  padding-top: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 1rem 0rem;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #6495ed;
+}
+
+section > ul {
+  padding-left: 25px;
+}
+.social-links a:hover,
+.social-links a:focus {
+  text-decoration: underline;
+  outline: 2px solid #0077cc;
+  border-radius: 0.25rem;
+}
+h3 {
+  padding: 1rem 0rem 0.5rem 0rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .profile-card {
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    gap: 4rem;
+  }
+  .avatar {
+    justify-content: left;
+    align-items: center;
+  }
+  .avatar img {
+    border-radius: 23px;
+  }
+  h2 {
+    padding-top: 0.5rem;
+  }
+}
