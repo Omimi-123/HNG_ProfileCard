@@ -1,13 +1,12 @@
-// document.addEventListener("DOMContentLoaded", () => {
-//   function updateTime() {
-//     const timeElement = document.getElementById("time");
-//     if (timeElement) timeElement.textContent = Date.now();
-//   }
+document.addEventListener("DOMContentLoaded", () => {
+  function updateTime() {
+    const timeElement = document.getElementById("time");
+    if (timeElement) timeElement.textContent = Date.now().toLocaleString();
+  }
 
-//   updateTime();
-//   setInterval(updateTime, 1000);
-
-// });
+  updateTime();
+  setInterval(updateTime, 1000);
+});
 
 document
   .getElementById("contactForm")
