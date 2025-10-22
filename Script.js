@@ -1,3 +1,12 @@
+function updateTime() {
+  const timeElement = document.getElementById("time");
+  timeElement.textContent = Date.now();
+}
+
+// update every second (optional)
+updateTime();
+setInterval(updateTime, 1000);
+
 document
   .getElementById("contactForm")
   .addEventListener("submit", function (event) {
@@ -68,11 +77,11 @@ document
     }
   });
 
-function updateTime() {
-  const timeElement = document.getElementById("time");
-  timeElement.textContent = Date.now();
-}
+// function updateTime() {
+//   const timeElement = document.getElementById("time");
+//   timeElement.textContent = Date.now();
+// }
 
-// This update the time every second
-updateTime();
-setInterval(updateTime, 1000);
+// // This update the time every second
+// updateTime();
+// setInterval(updateTime, 1000);
