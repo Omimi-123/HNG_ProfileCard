@@ -1,11 +1,12 @@
-function updateTime() {
-  const timeElement = document.getElementById("time");
-  timeElement.textContent = Date.now();
-}
+document.addEventListener("DOMContentLoaded", () => {
+  function updateTime() {
+    const timeElement = document.getElementById("time");
+    if (timeElement) timeElement.textContent = Date.now();
+  }
 
-// update every second (optional)
-updateTime();
-setInterval(updateTime, 1000);
+  updateTime();
+  setInterval(updateTime, 1000);
+});
 
 document
   .getElementById("contactForm")
@@ -76,12 +77,3 @@ document
       this.reset();
     }
   });
-
-// function updateTime() {
-//   const timeElement = document.getElementById("time");
-//   timeElement.textContent = Date.now();
-// }
-
-// // This update the time every second
-// updateTime();
-// setInterval(updateTime, 1000);
